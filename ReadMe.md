@@ -27,7 +27,7 @@ Usage
 * disassemble lua source or binary  
     luadec -dis abc.lua  
 * -pn print nested functions structure, could be used by -fn  
-```
+```shell
 luadec -pn test.lua
 0
   0_0
@@ -49,6 +49,14 @@ There are some more options, usually for debug purposes, or for cases where the 
 Use -h to get a complete list of usable parameters
 
 
+Useful script
+-------------
+decompile all lua files
+```shell
+./decompile_all.sh 
+usage: ./decompile_all.sh <input_folder> <out_folder>
+```
+
 Credits
 -------
 
@@ -56,6 +64,6 @@ Original by Hisham Muhammad (http://luadec.luaforge.net)
  
 Ongoing port to Lua 5.1 by Zsolt Sz. Sztupak (https://github.com/sztupy/luadec51/)
 
-Patch by OpenWRT (https://github.com/openwrt/openwrt)
+Patch by OpenWRT (https://github.com/openwrt/openwrt) and Yansong Li (https://github.com/liyansong2018/luadec)
 
 The internals of Lua5.1 was learned from Kein-Hong Man's A No-Frills Introduction to Lua 5.1 VM Instructions
