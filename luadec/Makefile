@@ -1,7 +1,7 @@
 # makefile for Lua decompiler
 
 LUAVER=5.1
-LUASRC=../lua-$(LUAVER)/src
+LUASRC=../lua-$(MYPATCH)/src
 LIBDIR=$(LUASRC)
 BINDIR=../bin
 
