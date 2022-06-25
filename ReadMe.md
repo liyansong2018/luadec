@@ -13,7 +13,7 @@ cd luadec
 cd lua-openwrt
 make linux
 cd ../luadec
-make MYPATCH=openwrt
+MYPATCH=openwrt LUAVER=5.1 make
 ```
 
 If you want to build it for lua 5.2 or 5.3 , just replace 5.1 above to 5.2 or 5.3 (git submodule update --init lua-5.1).
